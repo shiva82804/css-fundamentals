@@ -1,29 +1,21 @@
-
-
 .body{
-    display: flex;
-    /*This CSS file contains styles for a flexbox layout.*/
-    height : 800px;
-    justify-content: space-evenly;
-    flex-direction: row;
-    /*The 'flex-direction' property sets the direction of the main axis of the flex container.
-    The value 'row' sets the main axis to be horizontal, with the start of the line on the left and the end on the right.*/
-    align-items: flex-start;
-    /*The 'align-items' property aligns flex items along the cross axis of the container.
-    The value 'flex-start' aligns the flex items at the start of the cross axis.*/
-    border:8px solid black;
-    /*The 'display' property is set to 'flex' to create a flex container.
-    /*The 'justify-content' property aligns flex items along the main axis of the container.
-    The value 'center' centers the flex items within the container.*/
-    /*gap,column-gap,row-gap*/
-    /*wrap,nowrap,wrap-reverse*/
-    /*flex-shrink,flex-grow,flex-basis*/
+    height : 100px;
+    width : 100px;
+    background-color: blue;
+    border: 20x solid black;
+    position : relative;
+    top : 50px;
+    bottom : 10px;
+    /*In static if you do any change in top,bottom,left,right,z-index no change will be reflected*/
+    /*In relative the change can be achieved related to static */
+    /*In absolute accordind to the parent element*/
+    /*In fixed it will remain fixed or override other elements*/
 }
 
 .box{
-    height:200px;
-    width: 200px;
-    background-color: blue;
-    font-size: 40pt;
-
+    height: 100px;
+    width:100px;
+    background-color: red;
+    position : absolute;
+    top : 50px;
 }
